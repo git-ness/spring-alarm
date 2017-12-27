@@ -1,0 +1,4 @@
+.gradle/
+.idea/
+build/
+spring4-mvc-gradle-annotation-hello-world.iml

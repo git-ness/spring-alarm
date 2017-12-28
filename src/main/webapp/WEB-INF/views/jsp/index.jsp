@@ -34,7 +34,11 @@
         </p>
 
         <p>
+        </p>
+        <p>
+            <form action="index.jsp" method = "GET">
 
+            </form>
         </p>
         <iframe src="http://free.timeanddate.com/clock/i61ke3zl/n202/szw210/szh210/hoc09f/hfc09f/cf100/hnce1ead6/fan3/fas14/fdi76/mqc000/mql15/mqw4/mqd98/mhc000/mhl15/mhw4/mhd98/mmc000/mml10/mmw1/mmd98/hhs2/hms2/hsv0"
                 frameborder="0" width="210" height="210"></iframe>

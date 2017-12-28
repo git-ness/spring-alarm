@@ -6,16 +6,26 @@ import java.util.GregorianCalendar;
 
 class AlarmClock {
 
-//    private final int hour;
-//    private final int minute;
+    private final int hour;
+    private final int minute;
 
-    public AlarmClock() {
+    public AlarmClock(int hourParam, int minutesParam) {
+        this.hour = hourParam;
+        this.minute = minutesParam;
+        startAlarm(hour, minute);
+    }
 
+    public int getHour() {
+        return hour;
+    }
 
+    public int getMinute() {
+        return minute;
     }
 
 
-    public void startAlarm(int hourParam, int minutesParam) {
+    private void startAlarm(int hourParam, int minutesParam) {
+
         Thread thread = new Thread() {
 
             Calendar calendar = new GregorianCalendar();
@@ -52,10 +62,9 @@ class AlarmClock {
     }
 
     public static void main(String[] args) {
-        AlarmClock alarmClock = new AlarmClock();
+        AlarmClock alarmClock = new AlarmClock(11, 56);
 
-        // TODO: Make sure the alarm cannot be set in the past.
-        alarmClock.startAlarm(9, 50);
+        // TODO: Make sure the alarm cannot be set in the past
 
     }
 }

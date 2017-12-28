@@ -1,5 +1,6 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="th" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,6 +45,13 @@
                 frameborder="0" width="210" height="210"></iframe>
         <p></p><p></p>
         <a class="btn btn-primary btn-lg" href="#" role="button">Set Alarm</a>
+        <p></p>
+
+        <form action="#" th:action="@{/}" th:object="${AlarmClock}" method="post">
+            <p>Hour: <input type="text" th:field="*{id}" /></p>
+            <p>Minute: <input type="text" th:th:field="*{content}" /></p>
+            <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+        </form>
     </div>
 
 

@@ -1,6 +1,6 @@
 Gradle - Spring 4 MVC Hello World
 ===============================
-Template for Spring 4 MVC + JSP view + Annotation configuration, using Gradle build tool.
+Template for Spring 4 MVC + JSP view + Annotation configuration, using Gradle build tool. Originally pulled from [mkyoung.com](http://www.mkyong.com/spring-mvc/gradle-spring-4-mvc-hello-world-example-annotation/)
 
 ###1. Technologies used
 * Required Servlet 3.0+ container, like Tomcat 7 or Jetty 8

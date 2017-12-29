@@ -53,7 +53,7 @@
         <p>Hour: <input type="text" name='hourField'/>
         <p>Minute: <input type="text" th:th:field="minutesField" /></p>
 
-        <form action="#" "${AlarmClock}" method="POST">
+        <form action="/" method="post">
 
         <a class="btn btn-primary btn-lg" href="#" role="button">Set Alarm</a>
         <td><input type='textbox' hoursField='hoursField' value='<%=hoursField%>'></td>

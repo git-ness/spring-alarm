@@ -56,9 +56,9 @@
         <form action="/" method="post">
 
         <a class="btn btn-primary btn-lg" href="#" role="button">Set Alarm</a>
-        <td><input type='textbox' hoursField='hoursField' value='<%=hoursField%>'></td>
+        <td><input type='textbox' name='hoursField' value='<%=hoursField%>'></td>
 
-        <td><input type='textbox' hoursField='minutesField' value='<%=minutesField%>'></td>
+        <td><input type='textbox' name='minutesField' value='<%=minutesField%>'></td>
 
         <input type="submit" value="Submit" />
         </form>

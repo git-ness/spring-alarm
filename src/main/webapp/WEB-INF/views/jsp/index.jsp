@@ -3,6 +3,7 @@
 <%@ taglib prefix="th" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
 <html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Alarm Clock</title>
 
@@ -48,8 +49,8 @@
         <p></p>
 
         <form action="#" th:action="@{/}" th:object="${AlarmClock}" method="post">
-            <p>Hour: <input type="text" th:field="*{id}" /></p>
-            <p>Minute: <input type="text" th:th:field="*{content}" /></p>
+            <p>Hour: <input type="text" th:field="*{hour}" /></p>
+            <p>Minute: <input type="text" th:th:field="*{minutes}" /></p>
             <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
         </form>
     </div>

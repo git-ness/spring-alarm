@@ -4,6 +4,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 
 @Service
 public class HelloWorldService {
@@ -18,7 +20,13 @@ public class HelloWorldService {
 
 	}
 
-	public String getTitle(String name) {
+    @PostMapping("/")
+    public String greetingSubmit(@ModelAttribute AlarmClock alarmClock) {
+        return "";
+    }
+
+
+    public String getTitle(String name) {
 
 		logger.debug("getTitle() is executed! $name : {}", name);
 

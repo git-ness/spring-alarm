@@ -21,7 +21,7 @@ public class HelloWorldService {
 	}
 
     @PostMapping("/")
-    public String greetingSubmit(@ModelAttribute AlarmClock alarmClock) {
+    public String greetingSubmit(AlarmClock alarmClock) {
         return "";
     }
 

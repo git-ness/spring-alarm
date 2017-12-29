@@ -4,10 +4,14 @@ package com.mkyong.helloworld.service;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
-class AlarmClock {
+public class AlarmClock {
 
-    private final int hour;
-    private final int minute;
+    private int hour;
+    private int minute;
+
+    public AlarmClock() {
+
+    }
 
     public AlarmClock(int hourParam, int minutesParam) {
         this.hour = hourParam;
@@ -19,10 +23,17 @@ class AlarmClock {
         return hour;
     }
 
+    public void setHour(int hour) {
+        this.hour = hour;
+    }
+
     public int getMinute() {
         return minute;
     }
 
+    public void setMinute(int minute) {
+        this.minute = minute;
+    }
 
     private void startAlarm(int hourParam, int minutesParam) {
 
